@@ -4,10 +4,7 @@
 
 using namespace std;
 
-    Cronologia::Cronologia(){
-      EventoHistorico evento;
-      crono.push_back(evento);
-    }
+    Cronologia::Cronologia() { }
     Cronologia::Cronologia(int anio, string event){
       EventoHistorico evento;
       evento.setFecha(anio);
