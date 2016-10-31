@@ -47,10 +47,10 @@ using namespace std;
               b=is.get();
               if(b!='#' && b!='\n')
               eventostr.push_back(b);
-            }while(b!='\n' && b!='#');
+            }while(b!='\n' && b!='#' && !is.eof());
             evento.addEvento(eventostr);
             eventostr='\0';
-          }while(b!='\n');
+          }while(b!='\n' && !is.eof());
           evento.setFecha(anio);
           c.crono.push_back(evento);
         }
